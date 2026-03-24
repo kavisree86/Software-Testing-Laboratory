@@ -15,6 +15,18 @@ saved and type “pytest test_fib.py” and run it.
 5. Stop the program.
 
 ### Program:
+```
+def fibR(n): 
+    if n==1 or n==2: 
+        return 1 
+    return fibR(n-1)+fibR(n-2) 
+def test_fib_1_equals_1(): 
+    assert fibR(1) == 1 
+def test_fib_2_equals_1(): 
+    assert fibR(2) == 1 
+def test_fib_6_equals_8(): 
+    assert fibR(6) == 7
+```
 
 
 
@@ -29,6 +41,7 @@ saved and type “pytest test_fib.py” and run it.
 
 ### Output:
 
+<img width="1477" height="729" alt="image" src="https://github.com/user-attachments/assets/e43ab4d2-d26a-4e18-bf47-3459f3b9432c" />
 
 
 ### Result:
