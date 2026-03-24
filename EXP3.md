@@ -16,8 +16,32 @@ Write a python program to check the number is prime or not and inspect for failu
 8. Stop the program.
 
 ### Program:
+```
 
+num = input("Enter a number: ")
 
+if num.isnumeric():
+    z = int(num)
+    if z <= 1:
+        print("Not a Prime Number")
+    elif z == 2:
+        print("Prime Number")
+    else:
+        flag = 1  
+        for i in range(2, int(z**0.5) + 1):
+            if z % i == 0:
+                flag = 0
+                break
+        if flag == 1:
+            print("Prime Number")
+        else:
+            print("Not a Prime Number")
+else:
+    if not num.isalnum():
+            print("Reason to fail: Special characters are not allowed enter valid integer")
+    else:
+            print("Reason to fail: Alphabets are not allowed enter valid integer")
+```
 
 
 
@@ -30,6 +54,7 @@ Write a python program to check the number is prime or not and inspect for failu
 
 
 ### Output:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6dd53939-2e19-4226-bdb2-91ebbd6b5b3a" />
 
 
 
