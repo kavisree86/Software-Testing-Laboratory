@@ -17,8 +17,27 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 ### Program:
 
-
-
+```
+x = input("Enter the input: ")
+if x.isnumeric():
+    x = int(x)
+    temp = x
+    cube = 0
+    while temp > 0:
+        digit = temp % 10
+        cube += digit ** 3
+        temp //= 10
+    
+    if cube == x:
+        print("Armstrong Number")
+    else:
+        print("Not Armstrong Number")
+else:
+    if not x.isalnum():
+            print("Reason to fail: Special characters are not allowed enter valid integer")
+    else:
+            print("Reason to fail: Alphabets are not allowed enter valid integer")
+```
 
 
 
@@ -30,6 +49,7 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 
 ### Output:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b21e11f5-d25d-463d-8ccf-14feb2c12952" />
 
 
 
